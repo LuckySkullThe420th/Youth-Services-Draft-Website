@@ -3,5 +3,5 @@ Draft website back when I was working at City Hall as their website designer. I 
 
 
 
-NOTE: Take all the HTML and CSS files out of their respective folders and place them in the same directory. They go out of scope when you try to access them through 
+NOTE: Take all the HTML and CSS files out of their respective folders and place them in the same directory. The CSS go out of scope when you try to access the HTML files through 
 File Explorer or Live Server, so CSS files never reach the document. Placing the files in the same folder is ok and accessing through File Explorer/Live Server is ok too.
