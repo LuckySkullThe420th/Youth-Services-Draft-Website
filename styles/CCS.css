@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+
+/* 
+9/20/21
+
+Jayden Whitmore
+
+CSS for Care Coordination Services Web Page
+
+*/
+
+
+/* Body Styles */
+
+body{
+    display:flex;
+   flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    background: linear-gradient(to bottom, rgb(245, 248, 250) 20%, rgb(28, 129, 196));
+    margin:auto;
+    padding:10px;
+     width:960px;
+    border:5px double rgb(51,51,51);
+    border-radius:4px;
+    overflow-x: hidden;
+    box-shadow:rgb(0, 0, 0) 0px 0px 12px;
+}
+
+/* Styles for navigation */
+.special{
+    position:relative;
+    right:100px;
+    top:40px;
+}
+
+.sidenav{
+   padding:0px 10px 0px 10px;
+    margin-right:30px;
+    
+}
+.Flex{
+    position:relative;
+    bottom:400px;
+}
+
+
+/* h1 Styles */
+
+h1{
+    position:relative;
+    right:0px;
+    font-family: sans-serif;
+    font-size:40px;
+    font-style:italic;
+    text-decoration:underline;
+    color:green;
+    text-shadow:black 2px 4px 2px;
+}
+
+
+
+h3{
+    font-style: italic;
+}
+
+#Bold{
+    font-weight:bold;
+    color:rgb(51, 121, 92);
+    text-shadow:black 1px 1px 0px;
+}
+
+
+.Services-content li{
+    list-style-type: circle;
+    font-style:italic;
+}
+
+
+/*Container Styles */
+
+.Container{
+    display:flex;
+    align-self:flex-start;
+    flex-flow:wrap;
+    padding:0px; 
+    margin-right:50px;   
+}
+
+/*img styles */
+
+img{
+    border:2px solid black;
+    width:90%;
+    box-shadow:black 0px 0px 19px;
+}
+
+/*footer styles */
+
+.Contact{
+   position:relative;
+    bottom:-1150px;
+    right:400px;
+    font-size:18px;
+    color:black;
+}
+
+/*   ===================================================
+        Small screens(800px or lower)
+     =================================================== */
+
+@media screen and (min-width:400px) and (max-width:650px) {
+
+    .Jar{
+        display:flex;
+        flex-direction:column;
+        max-width:400px;
+ 
+     }
+}
+
+/*   =====================================================
+        Big screens(900px or lower)
+     ===================================================== */
+
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+        .Jar{
+            max-width:800px;
+        }
+}
+
+
+

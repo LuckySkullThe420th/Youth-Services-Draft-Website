@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@keyframes OurMission {
+    from{background:transparent;}
+    to {background:center;}
+}
+
+.OurMission img{
+    animation-name:OurMission;
+    animation-duration:2s;
+    width:100px;
+    height:100px;
+}
+

@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+
+/*
+
+9/20/21
+
+Jayden Whitmore
+
+CSS for Restorative Justice webpage
+*/
+
+
+/* Body Styles */
+
+
+.sidenav{
+   padding:0px 10px 0px 10px;
+    margin-right:30px;
+}
+
+.Up{
+    position:relative;
+}
+
+#hyperLinkleft, #hyperLinkright{
+    border:2px solid white;
+    display:inline-table;
+    overflow:hidden;
+   }
+
+   .Coverimg{
+      width:300px;
+      position:relative;
+      left:10px;
+   } 
+   #Word{
+    border:2px solid black;
+    border-radius:5px;
+    word-spacing:6px;
+    padding:10px 10px 5px 5px;
+    background-color: green;
+    box-shadow:black 2px 2px 5px;
+    color:black;
+}
+.Contact{
+    position:relative;
+    bottom:-20px;
+    margin:20px 60px;
+    word-spacing:5px;
+    color:black;
+    border:2px solid black;
+    border-radius:5px;
+    padding:0px 10px 0px 16px;
+    background:green;
+    box-shadow:black 2px 2px 5px;
+}
+
+
+/* H Styles */
+
+h1{
+    position:relative;
+    right:-100px;
+    font-family: sans-serif;
+    font-size:40px;
+    font-style:italic;
+    text-decoration:underline;
+    color:rgb(10, 82, 0);
+    text-shadow:black 4px 3px 2px;
+}
+
+ #text-shadow{
+    font-style: italic;
+    text-shadow:black 2px 4px 2px;
+    color:rgb(10, 82, 0);
+    text-decoration:underline;
+}
+
+/* ul styles */
+
+.Contact li{
+    font-weight: bold;
+}
+
+
+
+/*===================================================
+   For Small screens(800px or lower)  
+  =================================================== */
+
+  @media screen and (min-width:300px) and (max-width:800px){
+      .containerRS{
+          display:block;
+          align-items:center;
+      }
+
+      .topnav{
+          display:flex;
+          flex-direction:row;
+          margin-top:100px;
+
+      }
+
+      h1{
+          position:relative;
+          bottom: 250px;
+          right: 0px;
+          font-size: 25px;         
+      }
+  }
+
+
+  /* =====================================================
+         Big Screens(700px or higher)
+     ===================================================== */
+
+     @media screen and (min-width:700px) and (max-width:1366px){
+         .containerRS, .topnav{
+             display:flex;
+             flex-direction:column;
+             margin-top:100px;
+         }
+
+         h1{
+            position:relative;
+            bottom: 250px;
+            right: 0px;
+            font-size: 25px;         
+        }
+     }

@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* 
+
+9/20/21
+
+Jayden Whitmore
+
+CSS for Family Navigation webpage
+*/
+
+/*H1 Styles */
+h1{
+    position:relative;
+    right:0px;
+    font-family: sans-serif;
+    font-size:40px;
+    font-style:italic;
+    text-decoration:underline;
+    color:rgb(10, 82, 0);
+    text-shadow:black 4px 3px 2px;
+}
+
+/*img styles */
+
+.FNavFlyer{
+    position:relative;
+    left:200px;
+    border:2px dotted black;
+}
+
+
+
+/* =======================================================
+     For Small screens(800px or lower)  
+   =======================================================
+    */   
+
+    @media screen and (min-width:300px) and (max-width:600px){
+        .special, .topnav, .container{
+            display:block;
+            flex-direction:column;
+            
+        }
+         .FNavFlyer{
+             flex-direction: column;
+             width:100%;
+         }
+    } 
+    
+    @media screen and(max-width:768px) and (min-width: 100px){
+            .box7-article{
+                display:grid;
+                font-size:20px;
+                box-sizing: none;
+            }
+    
+            .colorStyles img{
+                 max-width:100px;
+            }
+    
+            .coverimg{
+                position:none;
+                right:-300px;
+            }
+            
+    }
+    
+    
+    
+    
+    /* =========================================================
+          For Big Screens(960px or higher)
+       =========================================================
+       */
+       
+       
+    

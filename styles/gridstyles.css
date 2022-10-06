@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+
+
+/*
+
+9/20/21
+
+Jayden Whitmore
+
+CSS gridding for NYS webpages
+*/
+
+html{
+   display:grid;  
+    width:100%;
+    background:rgb(28, 129, 196, 1);
+}
+
+.container{
+    display:grid;
+    gap:10px;
+    grid-template-columns:repeat(span 6, 1fr);
+    grid-template-rows: auto;
+    height:85vh;
+}
+
+.topnav{
+    grid-template-columns:repeat(12, 1fr);
+    margin-bottom:2em;
+    grid-row-start:-6;
+    grid-row-end:span 2;
+}
+.Move h2{
+    padding:10px 16px 17px 0px;
+    margin-top:0px;
+    margin-left:10px;
+
+}
+
+.Savescreen{
+    padding-left:6rem;
+}    
+
+
+/*Explicit grid */
+
+.container{
+    grid-template-areas:
+    'header'
+    'nav'
+    'img1, img2, nav2'
+    'info, info, info, info';
+    grid-template-rows:repeat(4, 25%);
+    grid-template-columns:240px auto auto;
+}
+
+#box1{
+   grid-area:header; 
+}
+
+#box2{
+    grid-area: nav;
+}
+
+#box5{
+    grid-area:img1;
+    position:relative;
+    right:0px;
+    top:16rem;
+    width:75%;
+}
+
+#box6{
+    grid-area:img2;
+    position:relative;
+    right:0px;
+    top:300px;
+    width:75%;
+}
+
+#box7{
+    grid-area:info;
+   position:sticky;
+    margin-bottom:none;
+}
+
+#box8{
+    grid-area:contact;
+    position: relative;
+    top:1500px;
+    right:200px;
+}
+
+
+/*Styles for RS */
+
+.containerRS{
+    display:grid;
+    grid-template-columns:repeat(span 5, 1fr);
+    grid-template-rows:auto;
+    grid-row-start:1;
+    grid-row-end:5;
+
+}
+
+
+/*Styles for CCS */
+
+.Main-content{
+    display:grid;
+    grid-template-columns:repeat(span 5, 1fr);
+    grid-template-rows:auto;
+    grid-row-start:1;
+    grid-row-end:5;
+    box-sizing:content-box;
+
+}
